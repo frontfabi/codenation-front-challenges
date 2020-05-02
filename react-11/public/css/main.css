@@ -1,0 +1,397 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+:root {
+	--alt-yellow: #bc9a1d;
+	--black: #000;
+	--main-yellow: #e4bb23;
+	--white: #fff;
+	--bg-films: #f2f2f2;
+	--fg-footer: #bababa;
+	--like: #ccc;
+	--like-hover: #e74c3c;
+	--twitter: #55acee;
+	--facebook: #3b5998;
+	--instagram: #e95950;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 10px;
+}
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+
+.banner {
+	background-attachment: fixed;
+	background-image: url(../img/capa-madmax2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
+	justify-content: space-between;
+	padding: 20px;
+	position: relative;
+	width: 100%;
+}
+
+.banner::after {
+	background-image: linear-gradient(0deg,	rgba(0, 0, 0, 0.6) 0%,	rgba(0, 212, 255, 0) 75%);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.banner-menu {
+	display: flex;
+	z-index: 2;
+}
+
+.banner-menu .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.banner-logo {
+	display: inline-block;
+}
+
+.list {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.item {
+	margin: 0 25px;
+}
+
+.item a,
+.categories-item a {
+	color: var(--white);
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+.item a:hover {
+	color: var(--main-yellow);
+}
+
+.login {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.avatar {
+	border-radius: 100%;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	height: 45px;
+	margin-right: 15px;
+	overflow: hidden;
+	width: 45px;
+}
+
+.username {
+	color: var(--white);
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.avatar img {
+	width: 100%;
+	height: auto;
+}
+
+.banner-content {
+	width: 100%;
+}
+
+.banner-content .container {
+	position: relative;
+	z-index: 2;
+}
+
+.banner-titulo {
+	color: var(--white);
+	font-size: 6.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.banner-category {
+	display: flex;
+	font-size: 13px;
+	list-style: none;
+	margin: 15px 0 30px;
+	padding: 0;
+}
+
+.banner-category-item a {
+	color: var(--white);
+	margin-right: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .2s ease-in-out;
+}
+
+.banner-category-item a:hover {
+	color: var(--main-yellow);
+}
+
+.cta {
+	background-color: var(--main-yellow);
+	border: none;
+	border-radius: 40px;
+	color: var(--black);
+	display: inline-block;
+	font-size: 1.5em;
+	padding: 15px 50px;
+	position: relative;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+	background-color: var(--alt-yellow);
+}
+
+.cta i {
+	font-size: 1.5em;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+
+.local-date {
+	padding: 20px 0;
+	font-size: 1.4em;
+	color: var(--white);
+}
+
+.local-date .alt {
+	color: var(--alt-yellow);
+}
+
+.films {
+	background-color: var(--bg-films);
+	width: 100%;
+}
+
+.categories {
+	width: 100%;
+}
+
+.categories-list {
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.categories-item {
+	margin: 0 20px;
+}
+
+.categories-item a {
+	color: var(--main-yellow);
+	display: inline-block;
+	padding: 25px 0;
+}
+
+.categories-item a:hover {
+	box-shadow: inset 0 -1px 0 var(--main-yellow);
+}
+
+.films .films-list {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	width: 100%;
+}
+
+.films .films-list .films-item {
+	background-color: var(--white);
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 24%;
+}
+
+.poster {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.poster img {
+	width: 100%;
+	height: auto;
+}
+
+.poster-info {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 0;
+	padding: 80px 20px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1;
+}
+
+.films-item:hover .poster-info {
+	opacity: 1;
+	visibility: visible;
+}
+
+.poster-info h3 {
+	color: var(--main-yellow);
+	font-size: 2em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.poster-link {
+	color: var(--white);
+	font-size: 5em;
+	transition: all 0.2s ease-in-out;
+}
+
+.poster-link:hover {
+	color: var(--main-yellow);
+}
+
+.synopsis {
+	padding: 10px;
+	width: 100%;
+}
+
+.synopsis-title {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.synopsis-categories {
+	margin: 10px 0;
+	display: flex;
+}
+
+.synopsis-categories-item {
+	color: var(--main-yellow);
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+.synopsis-categories-item:hover {
+	text-decoration: underline;
+}
+
+.rating {
+	margin: 0;
+	align-items: center;
+	color: var(--black);
+	display: flex;
+	font-size: 2em;
+	font-weight: bold;
+	justify-content: space-between;
+	text-decoration: none;
+}
+
+.rating i {
+	color: var(--like);
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.rating i:hover {
+	color: var(--like-hover);
+	font-size: 22px;
+}
+
+.footer {
+	background-color: var(--white);
+	color: var(--fg-footer);
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-media {
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.social {
+	margin: 0 20px;
+}
+
+.social:last-child {
+	margin-right: 0;
+}
+
+.social a {
+	font-size: 2.5em;
+	color: var(--fg-footer);
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.icon-twitter a:hover {
+	color: var(--twitter);
+}
+
+.icon-facebook a:hover {
+	color: var(--facebook);
+}
+
+.icon-instagram a:hover {
+	color: var(--instagram);
+}
