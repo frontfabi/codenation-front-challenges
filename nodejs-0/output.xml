@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0010" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-05-14T22:31:50" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="fibonacci" timestamp="2020-05-14T22:31:50" tests="1" file="/home/fabiana/codenation/nodejs-0/test/submit.test.js" time="0.0010" failures="0">
+    <testcase name="fibonacci should get fibonacci sequence until it passes 350" time="0.0010" classname="should get fibonacci sequence until it passes 350">
+    </testcase>
+  </testsuite>
+  <testsuite name="isFibonacci" timestamp="2020-05-14T22:31:50" tests="2" file="/home/fabiana/codenation/nodejs-0/test/submit.test.js" time="0.0000" failures="0">
+    <testcase name="isFibonacci should return true when the number is a fibonacci" time="0.0000" classname="should return true when the number is a fibonacci">
+    </testcase>
+    <testcase name="isFibonacci should return false when the number isn&apos;t a fibonacci" time="0.0000" classname="should return false when the number isn&apos;t a fibonacci">
+    </testcase>
+  </testsuite>
+</testsuites>
